@@ -1,0 +1,218 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ru"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="New 1969-70 Ford Mustang Mach 1, Boss 302 and Boss 429 now on sale, Boss 429&nbsp;(Classic Recreations), A Boss 302 and Mach 1 Are Also Available, Combo Platter: Jim Weigle’s 1969/2014 Mustang is an exercise in mating old and new to create one amazing Mustang">
+    <meta name="description" content="">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
+    <link href="{% static 'images/pngwing.com.png' %}" rel="icon">
+<link rel="stylesheet" href="{% static css|safe %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js'%}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'js/nicepage.js' %}" defer=""></script>
+    <meta name="generator" content="Nicepage 6.12.5, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
+
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/logo.png",
+		"sameAs": []
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-overlap-contrast u-overlap-transparent u-xl-mode" data-lang="ru"><header class="u-box-shadow u-clearfix u-header u-sticky u-sticky-a26f u-header" id="sec-ef8c"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="#" class="u-image u-logo u-image-1" data-image-width="800" data-image-height="800">
+          <img src="{% static 'images/logo.png' %}" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-align-left u-font-size-14 u-menu u-menu-hamburger u-nav-spacing-25 u-offcanvas u-menu-1" data-responsive-from="XL" data-submenu-level="on-click">
+          <div class="menu-collapse">
+            <a class="u-border-hover-grey-75 u-button-style u-nav-link" href="#" style="padding: 6px 12px; font-size: calc(1em + 13px);">
+              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7b92"></use></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-7b92" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;" xml:space="preserve" class="u-svg-content"><g><rect y="36" width="302" height="30"></rect><rect y="236" width="302" height="30"></rect><rect y="136" width="302" height="30"></rect>
+</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'Home' %}" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'hamma_model' m_model='biz_haqmizda' %}" style="padding: 10px 20px;">Biz haqmizda</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'hamma_model' m_model='bizning_asosiy_qoydlarmiz' %}" style="padding: 10px 20px;">bizning asosiy qoydlarmiz</a>
+</li>
+{% if request.user.is_authenticated %}
+<li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'car_shop' %}" style="padding: 10px 20px;">car shop</a></li>
+{% endif%}
+<li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'hamma_model' m_model='Galereya' %}" style="padding: 10px 20px;">Galereya</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'hamma_model' m_model='Komanda' %}" style="padding: 10px 20px;">Komanda</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'hamma_model' m_model='kontakt' %}" style="padding: 10px 20px;">kontakt</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'mashin_yuish' %}" style="padding: 10px 20px;">mashin yuish</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 10px 20px;">model</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'hamma_model' m_model='model'%}">model</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'hamma_model' m_model='model1' %}">model1</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'hamma_model' m_model='model2' %}">model2</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'hamma_model' m_model='model3' %}">model3</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'hamma_model' m_model='model4' %}">model4</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'hamma_model' m_model='model5' %}">model5</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'hamma_model' m_model='model6' %}">model6</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'hamma_model' m_model='model7' %}">model7</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'hamma_model' m_model='model8' %}">model8</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'hamma_model' m_model='model9' %}">model9</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'hamma_model' m_model='model11'%}">model11</a>
+</li></ul>
+</div>
+</li>
+{% if request.user.is_authenticated %}
+<li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 10px 20px;">Comment</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-3">
+<li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'model10' %}">commentlar</a></li>
+<li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'comment_qoshish' %}">Comment qo'shish</a></li></ul></div></li>
+{% endif %}
+<li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'hamma_model' m_model='Portfoliya' %}" style="padding: 10px 20px;">Portfoliya</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 10px 20px;">mening akavuntim</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-3">
+{% if request.user.is_authenticated %}
+<li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'profile' %}">profile</a></li>
+<li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'Logout' %}">Logout</a></li>
+{% else %}
+<li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'login' %}">login</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'signup' %}">signup</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'profile' %}">profile</a></li>
+{% endif %}</ul>
+</div>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-align-center u-border-2 u-border-palette-1-light-3 u-container-style u-grey-90 u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-spacing-2 u-text-hover-palette-1-light-1 u-unstyled u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'Home' %}" style="padding-top: 16px; padding-bottom: 16px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hamma_model' m_model='biz_haqmizda' %}" style="padding-top: 16px; padding-bottom: 16px;">Biz haqmizda</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hamma_model' m_model='bizning_asosiy_qoydlarmiz' %}" style="padding-top: 16px; padding-bottom: 16px;">bizning asosiy qoydlarmiz</a>
+</li>
+{% if request.user.is_authenticated %}
+<li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'car_shop' %}" style="padding-top: 16px; padding-bottom: 16px;">car shop</a></li>
+{% endif %}
+<li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hamma_model' m_model='Galereya' %}" style="padding-top: 16px; padding-bottom: 16px;">Galereya</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hamma_model' m_model='Komanda' %}" style="padding-top: 16px; padding-bottom: 16px;">Komanda</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hamma_model' m_model='kontakt' %}" style="padding-top: 16px; padding-bottom: 16px;">kontakt</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'mashin_yuish' %}" style="padding-top: 16px; padding-bottom: 16px;">mashin yuvish</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" style="padding-top: 16px; padding-bottom: 16px;">model</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-5"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hamma_model' m_model='model' %}">model</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hamma_model' m_model='model1' %}">model1</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hamma_model' m_model='model2' %}">model2</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hamma_model' m_model='model3' %}">model3</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hamma_model' m_model='model4' %}">model4</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hamma_model' m_model='model5' %}">model5</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hamma_model' m_model='model6' %}">model6</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hamma_model' m_model='model7' %}">model7</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hamma_model' m_model='model8' %}">model8</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hamma_model' m_model='model9' %}">model9</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hamma_model' m_model='model11' %}">model11</a>
+</li></ul>
+</div>
+</li>
+{% if request.user.is_authenticated %}
+<li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" style="padding-top: 16px; padding-bottom: 16px;">Comment</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-6">
+<li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'model10' %}">commentlar</a></li>
+<li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'comment_qoshish' %}">Comment qo'shish</a></li></ul></div></li>
+{% endif %}
+<li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hamma_model' m_model='hamma_model' m_model='Portfoliya' %}" style="padding-top: 16px; padding-bottom: 16px;">Portfoliya</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" style="padding-top: 16px; padding-bottom: 16px;">mening akavuntim</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-6">
+{% if request.user.is_authenticated %}
+<li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'profile' %}">profile</a></li>
+<li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'Logout' %}">Logout</a></li>
+{% else %}
+<li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'login' %}">login</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'signup' %}">signup</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'profile' %}">profile</a></li>
+{% endif %}
+</ul>
+</div>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-60"></div>
+          </div>
+        </nav>
+      </div></header>
+      
+    <center>
+        <form method='POST'>
+
+            <h1>Login</h1>
+            {% csrf_token %}
+            {{form.as_p}}
+
+            <button type="submit" class="submitbtn">Submit</button>
+            {% comment %} <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" spellcheck=false required placeholder="Email" autocomplete="off" />
+                <label for="email">Password</label>
+                <input type="password" required placeholder="Password" autocomplete="off" />
+                <button type="submit" class="submitbtn">Login</button>
+            </div> {% endcomment %}
+        </form>
+    </center>
+
+    <video autoplay muted loop id="video-background">
+        <source src="{% static 'video/u39869q72r129reeih4b.mp4' %}">
+    </video>
+
+    <style>
+      body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          margin: 0;
+          font-family: 'Roboto', sans-serif;
+          background: #000;
+      }
+      form {
+          background: rgba(0, 0, 0, 0.9);
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          text-align: left;
+      }
+      .form-group {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+      }
+      .form-group label {
+          font-weight: bold;
+      }
+      .form-group input {
+          padding: 10px;
+          border: 1px solid #302f2f;
+          border-radius: 5px;
+          font-size: 1rem;
+      }
+      .submitbtn {
+          padding: 10px;
+          background-color: #52595f;
+          color: #000000;
+          border: none;
+          border-radius: 5px;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: background-color 0.3s;
+      }
+      .submitbtn:hover {
+          background-color: #356aa0;
+      }
+      video#video-background {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          object-fit: cover;
+      }
+  </style>
+</body>
+
+</html>

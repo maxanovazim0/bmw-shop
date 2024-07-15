@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block container %}
+
+    <section class="u-clearfix u-image u-section-1" id="sec-3e33" data-image-width="1600" data-image-height="715">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-container-style u-grey-90 u-group u-opacity u-opacity-65 u-group-1">
+          <div class="u-container-layout u-valign-middle-lg u-valign-middle-sm u-valign-middle-xs u-container-layout-1">
+            <h2 class="u-text u-text-1">bmw bizning asosiy ustoli jixatmiz</h2>
+            <h3 class="u-text u-text-2">va jixatmiz keyine esa qoyda</h3>
+            <img src="{% static 'images/e5687eff445e6140236c4ec88b49802a.png' %}" alt="" class="u-image u-image-contain u-image-default u-image-1" data-image-width="100" data-image-height="100" data-href="https://www.cycleworld.com/andrea-dovizioso-takes-bumpy-brno-motogp" data-target="_blank">
+          </div>
+        </div>
+      </div>
+    </section>
+    {% for i in bizning_asosiy_qoydlarmiz%}
+    <section class="u-clearfix u-section-2" id="sec-ddfb">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img src="{{i.img_orqa.url}}" alt="" class="u-image u-image-contain u-image-default u-image-1">
+        <img src="{{i.img_oldi.url}}" alt="" class="u-expanded-width-xs u-image u-image-default u-image-2" data-image-width="1584" data-image-height="854">
+        <div class="u-align-left-md u-container-style u-expanded-width-xs u-group u-group-1">
+          <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm">
+            <div class="u-hidden-xs u-palette-1-base u-shape u-shape-rectangle u-shape-1"></div>
+            <h2 class="u-text u-text-1">{{i.name}}</h2>
+            <h4 class="u-text u-text-2">{{i.sarlavha }}</h4>
+            <p class="u-text u-text-3">{{i.text}}&nbsp;</p>
+            <a href="https://www.bmw.com" class="u-link u-link-1" target="_blank">read more</a>
+          </div>
+        </div>
+        <div class="u-container-style u-group u-group-2">
+          <div class="u-container-layout u-valign-middle">
+            <p class="u-text u-text-4">Photo by <a href="https://www.bmw.com" target="_blank">cycleworld</a>
+            </p>
+          </div>
+        </div>
+        <div class="u-border-1 u-border-grey-dark-1 u-line u-line-vertical u-line-1"></div>
+      </div>
+    </section>
+    {% endfor %}
+    {% comment %} <section class="u-clearfix u-section-3" id="carousel_1636">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img src="images/86b65ea220a17a11c4a70e2de19dcbfb.png" alt="" class="u-image u-image-contain u-image-default u-image-1">
+        <img src="images/0c74fa553a64b9d2af1b2172e2caab98.jpeg" alt="" class="u-expanded-width-xs u-image u-image-default u-image-2">
+        <div class="u-align-left-md u-container-style u-expanded-width-xs u-group u-group-1">
+          <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs">
+            <div class="u-hidden-xs u-palette-2-base u-shape u-shape-rectangle u-shape-1"></div>
+            <h2 class="u-text u-text-1">Roland Sands Threw</h2>
+            <h4 class="u-text u-text-2">Cops versus hooligans, sunshine, music, and burnouts galore</h4>
+            <p class="u-text u-text-3">Sometimes it takes a Southern Californian to throw a motorcycle party in San Francisco, and Roland Sands knows how to party. Along with his crew and the San Francisco police department, Sands organized the first annual Moto Bay Classic,
+                        held on Pier 32 under the iconic Bay Bridge on August 18.&nbsp;</p>
+            <a href="https://www.cycleworld.com/roland-sands-threw-motorcycle-party-on-san-francisco-bay-and-we-were-there" class="u-link u-link-1" target="_blank">read more</a>
+          </div>
+        </div>
+        <div class="u-align-right u-container-style u-group u-group-2">
+          <div class="u-container-layout u-valign-middle">
+            <p class="u-text u-text-4">Photo by <a href="https://www.cycleworld.com/roland-sands-threw-motorcycle-party-on-san-francisco-bay-and-we-were-there" target="_blank">cycleworld</a>
+            </p>
+          </div>
+        </div>
+        <div class="u-border-1 u-border-grey-dark-1 u-line u-line-vertical u-line-1"></div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-4" id="carousel_c768">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img src="images/88509d9302cc328cea58a388ff172b4b.png" alt="" class="u-image u-image-contain u-image-default u-image-1">
+        <img src="images/fb824dba09710889a12b016a6a840734.jpeg" alt="" class="u-expanded-width-xs u-image u-image-default u-image-2">
+        <div class="u-align-left-md u-container-style u-expanded-width-xs u-group u-group-1">
+          <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs">
+            <div class="u-hidden-xs u-palette-3-base u-shape u-shape-rectangle u-shape-1"></div>
+            <h2 class="u-text u-text-1">King Of Formula 750</h2>
+            <h4 class="u-text u-text-2">John Ellis makes his own luck</h4>
+            <p class="u-text u-text-3">John Ellis gave up racing and retired for his spouse, Ms. Jan, an integral part of a great team effort. She is the loyal support of John’s racing and never fails to watch, unlike some significant others who prefer to hold their breath
+                        and let their attention be occupied by something else until it’s over.</p>
+            <a href="https://www.cycleworld.com/americas-king-formula-750-part-2" class="u-link u-link-1" target="_blank">read more</a>
+          </div>
+        </div>
+        <div class="u-container-style u-group u-group-2">
+          <div class="u-container-layout u-valign-middle">
+            <p class="u-text u-text-4">Photo by <a href="https://www.cycleworld.com/americas-king-formula-750-part-2" target="_blank">cycleworld</a>
+            </p>
+          </div>
+        </div>
+        <div class="u-border-1 u-border-grey-dark-1 u-line u-line-vertical u-line-1"></div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-5" id="carousel_7b75">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img src="images/06e6467b6cd203c1e851e5108c21bede.png" alt="" class="u-image u-image-contain u-image-default u-image-1">
+        <img src="images/1d7ba678aa5ca4a87372d4865f9ffeca.jpeg" alt="" class="u-expanded-width-xs u-image u-image-default u-image-2">
+        <div class="u-align-left-md u-container-style u-expanded-width-xs u-group u-group-1">
+          <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs">
+            <div class="u-hidden-xs u-palette-4-base u-shape u-shape-rectangle u-shape-1"></div>
+            <h2 class="u-text u-text-1">Yamaha YZ450FX</h2>
+            <h4 class="u-text u-text-2">First impression of Yamaha’s closed-course off-road bike</h4>
+            <p class="u-text u-text-3">The YZ450FX engine has tons of power and lots of torque that work great in both high- and low-speed riding conditions. In tighter areas where the speeds are slower, the low first gear makes the engine very controllable and difficult
+                        to stall, but is understandably very short, making it only useful in tight single-track.&nbsp;</p>
+            <a href="https://www.cycleworld.com/2018-yamaha-yz450fx-first-ride-review" class="u-link u-link-1" target="_blank">read more</a>
+          </div>
+        </div>
+        <div class="u-align-right u-container-style u-group u-group-2">
+          <div class="u-container-layout u-valign-middle">
+            <p class="u-text u-text-4">Photo by <a href="https://www.cycleworld.com/2018-yamaha-yz450fx-first-ride-review" target="_blank">cycleworld</a>
+            </p>
+          </div>
+        </div>
+        <div class="u-border-1 u-border-grey-dark-1 u-line u-line-vertical u-line-1"></div>
+      </div>
+    </section>
+     {% endcomment %}
+{% endblock %}

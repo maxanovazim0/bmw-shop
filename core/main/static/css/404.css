@@ -1,0 +1,67 @@
+html{
+  background-color: black;
+}
+svg {
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+}
+polygon {
+  transform:rotateY(-180deg) scale(0);
+  transition: all 0.4s cubic-bezier(0.590, 0.720, 0.375, 1.650);
+  transform-origin:center;
+}
+polygon.processed {
+  transform:rotateY(0deg) scale(1);
+}
+
+
+.info-button {
+  background-color: #181a1b;
+  border: 2px solid #00eaff;
+  color: #00eaff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  width: 20%;
+  float: right;
+  top: 100px;
+  margin-right: 50px;
+}
+
+.info-button span {
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s;
+}
+
+.info-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: #00eaff;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.info-button.clicked span {
+  color: #181a1b;
+}
+
+.info-button.clicked::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.info-button.clicked {
+  color: #181a1b;
+}

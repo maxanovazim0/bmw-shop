@@ -1,0 +1,248 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block container %}
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    
+    <div id="video-container">
+      <video id="video-background" autoplay loop muted>
+        <source src="{% static 'video/u1jg07dkvpay5lz0ez0q.mp4' %}">
+      </video>
+      <div id="content">
+        <h1>Bmw </h1>
+        {% for c in cars%}
+        <h3><small><del><sup>$</sup>{{c.car.price}} </del></small> &nbsp; <sup>$</sup>{{c.car.discount}}</h3>
+        {% endfor %}
+      </div>
+    </div>
+
+
+     <div class="services">
+      <div class="container">
+        <div class="row">
+          <div class="services">
+            <div class="container">
+              <div class="row">
+                {% for vehicle in cars %}
+                <div class="col-md-7">
+                  <div>
+                    <img src="{{ vehicle.main_image.url }}" alt="" class="img-fluid wc-image">
+                  </div>
+                  <br>
+                  <div class="row">
+                    {% for image in vehicle.all_images %}
+                    <div class="col-sm-4 col-6">
+                      <div>
+                        <img src="{{ image.image.url }}" alt="" class="img-fluid">
+                      </div>
+                      <br>
+                    </div>
+                    {% endfor %}
+                  </div>
+                  <br>
+                </div>
+                <div class="col-md-5">
+                  <form action="#" method="post" class="form">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <div class="clearfix">
+                          <span class="pull-left">Type</span>
+                          <strong class="pull-right">{{ vehicle.get_type_display }}</strong>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="clearfix">
+                          <span class="pull-left">Make</span>
+                          <strong class="pull-right">{{ vehicle.make }}</strong>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="clearfix">
+                          <span class="pull-left">Model</span>
+                          <strong class="pull-right">{{ vehicle.model }}</strong>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="clearfix">
+                          <span class="pull-left">First registration</span>
+                          <strong class="pull-right">{{ vehicle.first_registration|date:"d/m/Y" }}</strong>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="clearfix">
+                          <span class="pull-left">Mileage</span>
+                          <strong class="pull-right">{{ vehicle.mileage }} km</strong>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="clearfix">
+                          <span class="pull-left">Fuel</span>
+                          <strong class="pull-right">{{ vehicle.get_fuel_display }}</strong>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="clearfix">
+                          <span class="pull-left">Engine size</span>
+                          <strong class="pull-right">{{ vehicle.engine_size }} cc</strong>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="clearfix">
+                          <span class="pull-left">Power</span>
+                          <strong class="pull-right">{{ vehicle.power }} hp</strong>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="clearfix">
+                          <span class="pull-left">Gearbox</span>
+                          <strong class="pull-right">{{ vehicle.get_gearbox_display }}</strong>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="clearfix">
+                          <span class="pull-left">Number of seats</span>
+                          <strong class="pull-right">{{ vehicle.number_of_seats }}</strong>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="clearfix">
+                          <span class="pull-left">Doors</span>
+                          <strong class="pull-right">{{ vehicle.doors }}</strong>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="clearfix">
+                          <span class="pull-left">Color</span>
+                          <strong class="pull-right">{{ vehicle.color }}</strong>
+                        </div>
+                      </li>
+                      <a href="{% url 'yetgazib_berish' car_detail_id=vehicle.id %}" class="filled-button">View More</a>
+                    </ul>
+                  </form>
+                  <br>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+          <div class="col-md-8">
+            <div class="tabs-content">
+              <h4>Vehicle Description</h4>
+
+              <p>- Colour coded bumpers<br>- Tinted glass<br>- Immobiliser<br>- Central locking - remote<br>- Passenger airbag<br>- Electric windows<br>- Rear head rests<br>- Radio<br>- CD player<br>- Ideal first car<br>- Warranty<br>- High level brake light<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+              <br>
+            </div>
+          </div> 
+
+          <div class="col-md-4">
+            <div class="tabs-content">
+              <h4>Vehicle Extras</h4>
+
+              <p>- ABS <br>-Leather seats <br>-Power Assisted Steering <br>-Electric heated seats <br>-New HU and AU <br>-Xenon headlights</p>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="tabs-content">
+              <h4>Contact Details</h4>
+
+              <p>
+                <span>Name</span>
+              
+                <br>
+              
+                <strong>MaxanovAzim</strong>
+              </p>
+              
+              <p>
+                <span>Phone</span>
+              
+                <br>
+                
+                <strong>
+                  <a href="tel:+998-90-900-90-90">+998-90-900-90-90</a>
+                </strong>
+              </p>
+              
+              <p>
+                <span>Mobile phone</span>
+              
+                <br>
+                
+                <strong>
+                  <a href="tel:+998-99-999-99-99">+998-99-999-99-99</a>
+                </strong>
+              </p>
+              
+              <p>
+                <span>Email</span>
+              
+                <br>
+                
+                <strong>
+                  <a href="mailto:azimmaxanov9.com">azimmaxanov9.com</a>
+                </strong>
+              </p>
+            </div>
+
+            <br>
+          </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Additional Scripts -->
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+
+    <style>
+      #video-container {
+        position: relative;
+        width: 100%;
+        height: 70vh; 
+        overflow: hidden;
+    }
+    
+    #video-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+    
+    #content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: #ffffff;
+    }
+    </style>
+   
+  
+{% endblock %}
